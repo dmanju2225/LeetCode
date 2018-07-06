@@ -10,4 +10,8 @@ public class ListNode
 		this.next = null;
 		this.data = k;
 	}
+	ListNode(ListNode that){
+		this.next=null;
+		this.data=that.data;
+	}
 }
