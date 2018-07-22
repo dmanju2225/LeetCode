@@ -26,10 +26,10 @@ public class RemoveElement
 		{
 			a[i] = scan.nextInt();
 		}
-		int result = removeElement(a, n, k);
-		System.out.println("result is " + result);
-		int Oresult = twoPointerremoveElement(a, n, k);
-		System.out.println("result is " + Oresult);
+		//int result = removeElement(a, n, k);
+		//System.out.println("result is " + result);
+		//int Oresult = twoPointerremoveElement(a, n, k);
+		//System.out.println("result is " + Oresult);
 		int OOresult = rareRemoveElementNoOrder(a, n, k);
 		System.out.println("result is " + OOresult);
 		
@@ -40,8 +40,9 @@ public class RemoveElement
 		// TODO Auto-generated method stub
 		int i=0;
 		while(i<n){
+			
 			if(a[i]==k){
-				a[i]=a[n-1]; //ip: 4,1,2,3,5 k=4 op: 5,1,2,3,5 : no order 1,2,3,5,4
+				a[i]=a[n-1]; //ip: 4,1,2,3,5 k=4 op: 5,1,2,3,5 : no order 1,2,3,5,4	
 				n--;
 			}
 			else{

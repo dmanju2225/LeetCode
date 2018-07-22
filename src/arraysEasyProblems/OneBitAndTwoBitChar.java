@@ -8,7 +8,7 @@ public class OneBitAndTwoBitChar
 
 	public static void main(String[] args)
 	{
-	int[] bits={1,0,0};
+	int[] bits={1,1,1,0};
 	boolean result=method(bits);
 System.out.println(result);
 boolean Oresult=Omethod(bits);
@@ -21,6 +21,7 @@ System.out.println(Oresult);
 		int i = 0;
 		int n=bits.length;
 		while(i<n-1){
+			
 			if(bits[i]==0){
 				i++;
 			}

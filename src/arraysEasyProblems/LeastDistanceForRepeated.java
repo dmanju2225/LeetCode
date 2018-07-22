@@ -6,7 +6,7 @@ public class LeastDistanceForRepeated
 	public static void main(String[] args)
 	{
 		// TODO Auto-generated method stub
-		int[] ar = { 1, 2, 4, 0, 5, 4 };
+		int[] ar = { 1, 2, 3 , 2, 0, 4, 4 };
 		int[] result = LeastDist(ar);
 		System.out.println(result[0] + " " + result[1]);
 

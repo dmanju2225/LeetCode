@@ -19,21 +19,23 @@ public class RemoveDuplicatesInArrayInPlace
 		}
 		int res=RemoveDuplicateInPlace(a);
 		System.out.println(res);
-
+		for(int i=0;i<n;i++){
+			System.out.println(a[i]);
+		}
 	}
 
 	private static int RemoveDuplicateInPlace(int[] a)
 	{
 		// TODO Auto-generated method stub
-		int i=0;
-		for(int j=1;j<a.length;j++){
-			if(a[i]!=a[j])
-			{
-				i++;
-				a[i]=a[j];
-			}
-		}
-		return i+1;
-	}
-
+		int n=a.length;
+       for(int i=0;i<n;i++){
+    	   for(int j=i+1;j<n;j++){
+    		   if(a[i]==a[j]){
+    			   a[j]=a[n-1];
+    			   n--;
+    		   }
+    	   }
+       }
+       return n;
+}
 }
