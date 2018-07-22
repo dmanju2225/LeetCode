@@ -204,7 +204,7 @@ public class MyLinkedList
 		}
 		while (true)
 		{
-			if (fastPointer.next == null || fastPointer.next.next == null)
+			if (fastPointer.next == null || fastPointer== null)
 			{
 				return "no loop";
 			}
